@@ -26,12 +26,12 @@ Check out [this example output](example_output.txt) if you want an indication of
 # Installation
 No idea how exactly you would make this repository part of a working or new environment.
 
-But probably something like the following, if you were to clone it to your root folder/
+But probably something like the following, if you were to clone it to /srv/salt/
 Do note that there are already top.sls files for both the nextcloud and nextcloud_pillar folders!
 If you already have top.sls files, you may have to add the new file-paths within them...?
 
 ```
-cd /
+cd /srv/salt
 git clone https://github.com/AskskwBv8T2nrm4Qnj/nextcloud-salt.git
 ```
 
@@ -41,13 +41,13 @@ file_roots:
   base:
     - /srv/salt/
   nextcloud:
-    - /root/nextcloud-salt/nextcloud
+    - /srv/salt/nextcloud-salt/nextcloud/
 
 pillar_roots:
   base:
     - /srv/pillar
   nextcloud_pillar:
-    - /root/nextcloud-salt/nextcloud_pillar
+    - /srv/salt/nextcloud-salt/nextcloud_pillar
 ```
 
 Modify the pillar file to your liking:
