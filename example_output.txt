@@ -1,0 +1,1256 @@
+[root@salt ~]# salt client4.school.test state.apply install_nextcloud
+client4.school.test:
+----------
+          ID: remi_gpg-key_9
+    Function: file.managed
+        Name: /etc/pki/rpm-gpg/RPM-GPG-KEY-remi.el9
+      Result: True
+     Comment: File /etc/pki/rpm-gpg/RPM-GPG-KEY-remi.el9 updated
+     Started: 12:11:55.706857
+    Duration: 298.586 ms
+     Changes:
+              ----------
+              diff:
+                  New file
+              mode:
+                  0644
+----------
+          ID: remi_gpg-key_10
+    Function: file.managed
+        Name: /etc/pki/rpm-gpg/RPM-GPG-KEY-remi.el10
+      Result: True
+     Comment: File /etc/pki/rpm-gpg/RPM-GPG-KEY-remi.el10 updated
+     Started: 12:11:56.005609
+    Duration: 270.73 ms
+     Changes:
+              ----------
+              diff:
+                  New file
+              mode:
+                  0644
+----------
+          ID: remi
+    Function: pkgrepo.managed
+      Result: True
+     Comment: Configured package repo 'remi'
+     Started: 12:11:56.361571
+    Duration: 25.317 ms
+     Changes:
+              ----------
+              repo:
+                  remi
+----------
+          ID: remi-modular
+    Function: pkgrepo.managed
+      Result: True
+     Comment: Configured package repo 'remi-modular'
+     Started: 12:11:56.386993
+    Duration: 18.493 ms
+     Changes:
+              ----------
+              repo:
+                  remi-modular
+----------
+          ID: remi-safe
+    Function: pkgrepo.managed
+      Result: True
+     Comment: Configured package repo 'remi-safe'
+     Started: 12:11:56.405561
+    Duration: 18.598 ms
+     Changes:
+              ----------
+              repo:
+                  remi-safe
+----------
+          ID: base_packages
+    Function: pkg.installed
+      Result: True
+     Comment: 12 targeted packages were installed/updated.
+              The following packages were already installed: curl
+     Started: 12:11:58.096195
+    Duration: 44569.026 ms
+     Changes:
+              ----------
+              apr:
+                  ----------
+                  new:
+                      1.7.0-12.el9_3
+                  old:
+              apr-util:
+                  ----------
+                  new:
+                      1.6.1-23.el9
+                  old:
+              apr-util-bdb:
+                  ----------
+                  new:
+                      1.6.1-23.el9
+                  old:
+              apr-util-openssl:
+                  ----------
+                  new:
+                      1.6.1-23.el9
+                  old:
+              bash-completion:
+                  ----------
+                  new:
+                      1:2.11-5.el9
+                  old:
+              bzip2:
+                  ----------
+                  new:
+                      1.0.8-10.el9_5
+                  old:
+              checkpolicy:
+                  ----------
+                  new:
+                      3.6-1.el9
+                  old:
+              epel-release:
+                  ----------
+                  new:
+                      9-7.el9
+                  old:
+              httpd:
+                  ----------
+                  new:
+                      2.4.62-4.el9_6.4
+                  old:
+              httpd-core:
+                  ----------
+                  new:
+                      2.4.62-4.el9_6.4
+                  old:
+              httpd-filesystem:
+                  ----------
+                  new:
+                      2.4.62-4.el9_6.4
+                  old:
+              httpd-tools:
+                  ----------
+                  new:
+                      2.4.62-4.el9_6.4
+                  old:
+              libpkgconf:
+                  ----------
+                  new:
+                      1.7.3-10.el9
+                  old:
+              mailcap:
+                  ----------
+                  new:
+                      2.1.49-5.el9
+                  old:
+              mariadb:
+                  ----------
+                  new:
+                      3:10.5.27-1.el9_5.0.2
+                  old:
+              mariadb-backup:
+                  ----------
+                  new:
+                      3:10.5.27-1.el9_5.0.2
+                  old:
+              mariadb-common:
+                  ----------
+                  new:
+                      3:10.5.27-1.el9_5.0.2
+                  old:
+              mariadb-connector-c:
+                  ----------
+                  new:
+                      3.2.6-1.el9_0
+                  old:
+              mariadb-connector-c-config:
+                  ----------
+                  new:
+                      3.2.6-1.el9_0
+                  old:
+              mariadb-errmsg:
+                  ----------
+                  new:
+                      3:10.5.27-1.el9_5.0.2
+                  old:
+              mariadb-gssapi-server:
+                  ----------
+                  new:
+                      3:10.5.27-1.el9_5.0.2
+                  old:
+              mariadb-server:
+                  ----------
+                  new:
+                      3:10.5.27-1.el9_5.0.2
+                  old:
+              mariadb-server-utils:
+                  ----------
+                  new:
+                      3:10.5.27-1.el9_5.0.2
+                  old:
+              mlocate:
+                  ----------
+                  new:
+                      0.26-30.el9
+                  old:
+              mod_http2:
+                  ----------
+                  new:
+                      2.0.26-4.el9_6.1
+                  old:
+              mod_lua:
+                  ----------
+                  new:
+                      2.4.62-4.el9_6.4
+                  old:
+              mysql-selinux:
+                  ----------
+                  new:
+                      1.0.14-1.el9_6
+                  old:
+              perl-AutoLoader:
+                  ----------
+                  new:
+                      5.74-481.1.el9_6
+                  old:
+              perl-B:
+                  ----------
+                  new:
+                      1.80-481.1.el9_6
+                  old:
+              perl-Carp:
+                  ----------
+                  new:
+                      1.50-460.el9
+                  old:
+              perl-Class-Struct:
+                  ----------
+                  new:
+                      0.66-481.1.el9_6
+                  old:
+              perl-DBD-MariaDB:
+                  ----------
+                  new:
+                      1.21-16.el9_0
+                  old:
+              perl-DBI:
+                  ----------
+                  new:
+                      1.643-9.el9
+                  old:
+              perl-Data-Dumper:
+                  ----------
+                  new:
+                      2.174-462.el9
+                  old:
+              perl-Digest:
+                  ----------
+                  new:
+                      1.19-4.el9
+                  old:
+              perl-Digest-MD5:
+                  ----------
+                  new:
+                      2.58-4.el9
+                  old:
+              perl-DynaLoader:
+                  ----------
+                  new:
+                      1.47-481.1.el9_6
+                  old:
+              perl-Encode:
+                  ----------
+                  new:
+                      4:3.08-462.el9
+                  old:
+              perl-Errno:
+                  ----------
+                  new:
+                      1.30-481.1.el9_6
+                  old:
+              perl-Exporter:
+                  ----------
+                  new:
+                      5.74-461.el9
+                  old:
+              perl-Fcntl:
+                  ----------
+                  new:
+                      1.13-481.1.el9_6
+                  old:
+              perl-File-Basename:
+                  ----------
+                  new:
+                      2.85-481.1.el9_6
+                  old:
+              perl-File-Copy:
+                  ----------
+                  new:
+                      2.34-481.1.el9_6
+                  old:
+              perl-File-Path:
+                  ----------
+                  new:
+                      2.18-4.el9
+                  old:
+              perl-File-Temp:
+                  ----------
+                  new:
+                      1:0.231.100-4.el9
+                  old:
+              perl-File-stat:
+                  ----------
+                  new:
+                      1.09-481.1.el9_6
+                  old:
+              perl-FileHandle:
+                  ----------
+                  new:
+                      2.03-481.1.el9_6
+                  old:
+              perl-Getopt-Long:
+                  ----------
+                  new:
+                      1:2.52-4.el9
+                  old:
+              perl-Getopt-Std:
+                  ----------
+                  new:
+                      1.12-481.1.el9_6
+                  old:
+              perl-HTTP-Tiny:
+                  ----------
+                  new:
+                      0.076-462.el9
+                  old:
+              perl-IO:
+                  ----------
+                  new:
+                      1.43-481.1.el9_6
+                  old:
+              perl-IO-Socket-IP:
+                  ----------
+                  new:
+                      0.41-5.el9
+                  old:
+              perl-IO-Socket-SSL:
+                  ----------
+                  new:
+                      2.073-2.el9
+                  old:
+              perl-IPC-Open3:
+                  ----------
+                  new:
+                      1.21-481.1.el9_6
+                  old:
+              perl-MIME-Base64:
+                  ----------
+                  new:
+                      3.16-4.el9
+                  old:
+              perl-Math-BigInt:
+                  ----------
+                  new:
+                      1:1.9998.18-460.el9
+                  old:
+              perl-Math-Complex:
+                  ----------
+                  new:
+                      1.59-481.1.el9_6
+                  old:
+              perl-Mozilla-CA:
+                  ----------
+                  new:
+                      20200520-6.el9
+                  old:
+              perl-NDBM_File:
+                  ----------
+                  new:
+                      1.15-481.1.el9_6
+                  old:
+              perl-Net-SSLeay:
+                  ----------
+                  new:
+                      1.94-1.el9
+                  old:
+              perl-POSIX:
+                  ----------
+                  new:
+                      1.94-481.1.el9_6
+                  old:
+              perl-PathTools:
+                  ----------
+                  new:
+                      3.78-461.el9
+                  old:
+              perl-Pod-Escapes:
+                  ----------
+                  new:
+                      1:1.07-460.el9
+                  old:
+              perl-Pod-Perldoc:
+                  ----------
+                  new:
+                      3.28.01-461.el9
+                  old:
+              perl-Pod-Simple:
+                  ----------
+                  new:
+                      1:3.42-4.el9
+                  old:
+              perl-Pod-Usage:
+                  ----------
+                  new:
+                      4:2.01-4.el9
+                  old:
+              perl-Scalar-List-Utils:
+                  ----------
+                  new:
+                      4:1.56-462.el9
+                  old:
+              perl-SelectSaver:
+                  ----------
+                  new:
+                      1.02-481.1.el9_6
+                  old:
+              perl-Socket:
+                  ----------
+                  new:
+                      4:2.031-4.el9
+                  old:
+              perl-Storable:
+                  ----------
+                  new:
+                      1:3.21-460.el9
+                  old:
+              perl-Symbol:
+                  ----------
+                  new:
+                      1.08-481.1.el9_6
+                  old:
+              perl-Sys-Hostname:
+                  ----------
+                  new:
+                      1.23-481.1.el9_6
+                  old:
+              perl-Term-ANSIColor:
+                  ----------
+                  new:
+                      5.01-461.el9
+                  old:
+              perl-Term-Cap:
+                  ----------
+                  new:
+                      1.17-460.el9
+                  old:
+              perl-Text-ParseWords:
+                  ----------
+                  new:
+                      3.30-460.el9
+                  old:
+              perl-Text-Tabs+Wrap:
+                  ----------
+                  new:
+                      2013.0523-460.el9
+                  old:
+              perl-Time-Local:
+                  ----------
+                  new:
+                      2:1.300-7.el9
+                  old:
+              perl-URI:
+                  ----------
+                  new:
+                      5.09-3.el9
+                  old:
+              perl-base:
+                  ----------
+                  new:
+                      2.27-481.1.el9_6
+                  old:
+              perl-constant:
+                  ----------
+                  new:
+                      1.33-461.el9
+                  old:
+              perl-if:
+                  ----------
+                  new:
+                      0.60.800-481.1.el9_6
+                  old:
+              perl-interpreter:
+                  ----------
+                  new:
+                      4:5.32.1-481.1.el9_6
+                  old:
+              perl-libnet:
+                  ----------
+                  new:
+                      3.13-4.el9
+                  old:
+              perl-libs:
+                  ----------
+                  new:
+                      4:5.32.1-481.1.el9_6
+                  old:
+              perl-mro:
+                  ----------
+                  new:
+                      1.23-481.1.el9_6
+                  old:
+              perl-overload:
+                  ----------
+                  new:
+                      1.31-481.1.el9_6
+                  old:
+              perl-overloading:
+                  ----------
+                  new:
+                      0.02-481.1.el9_6
+                  old:
+              perl-parent:
+                  ----------
+                  new:
+                      1:0.238-460.el9
+                  old:
+              perl-podlators:
+                  ----------
+                  new:
+                      1:4.14-460.el9
+                  old:
+              perl-subs:
+                  ----------
+                  new:
+                      1.03-481.1.el9_6
+                  old:
+              perl-vars:
+                  ----------
+                  new:
+                      1.05-481.1.el9_6
+                  old:
+              pkgconf:
+                  ----------
+                  new:
+                      1.7.3-10.el9
+                  old:
+              pkgconf-m4:
+                  ----------
+                  new:
+                      1.7.3-10.el9
+                  old:
+              pkgconf-pkg-config:
+                  ----------
+                  new:
+                      1.7.3-10.el9
+                  old:
+              policycoreutils-python-utils:
+                  ----------
+                  new:
+                      3.6-2.1.el9
+                  old:
+              python3-audit:
+                  ----------
+                  new:
+                      3.1.5-4.el9
+                  old:
+              python3-distro:
+                  ----------
+                  new:
+                      1.5.0-7.el9
+                  old:
+              python3-libsemanage:
+                  ----------
+                  new:
+                      3.6-5.el9_6
+                  old:
+              python3-pip:
+                  ----------
+                  new:
+                      21.3.1-1.el9
+                  old:
+              python3-policycoreutils:
+                  ----------
+                  new:
+                      3.6-2.1.el9
+                  old:
+              python3-setools:
+                  ----------
+                  new:
+                      4.4.4-1.el9
+                  old:
+              python3-setuptools:
+                  ----------
+                  new:
+                      53.0.0-13.el9_6.1
+                  old:
+              rocky-logos-httpd:
+                  ----------
+                  new:
+                      90.16-1.el9
+                  old:
+              unzip:
+                  ----------
+                  new:
+                      6.0-58.el9_5
+                  old:
+              wget:
+                  ----------
+                  new:
+                      1.21.1-8.el9_4
+                  old:
+              yum-utils:
+                  ----------
+                  new:
+                      4.3.0-20.el9
+                  old:
+              zip:
+                  ----------
+                  new:
+                      3.0-35.el9
+                  old:
+----------
+          ID: install_pymysql
+    Function: pip.installed
+        Name: pymysql
+      Result: True
+     Comment: All packages were successfully installed
+     Started: 12:12:44.989869
+    Duration: 8469.959 ms
+     Changes:
+              ----------
+              pymysql==1.1.2:
+                  Installed
+----------
+          ID: php_packages
+    Function: pkg.installed
+      Result: True
+     Comment: 12 targeted packages were installed/updated.
+     Started: 12:12:53.488278
+    Duration: 48213.937 ms
+     Changes:
+              ----------
+              capstone:
+                  ----------
+                  new:
+                      4.0.2-10.el9
+                  old:
+              environment-modules:
+                  ----------
+                  new:
+                      5.3.0-1.el9
+                  old:
+              fontconfig:
+                  ----------
+                  new:
+                      2.14.0-2.el9_1
+                  old:
+              freetype:
+                  ----------
+                  new:
+                      2.10.4-10.el9_5
+                  old:
+              fribidi:
+                  ----------
+                  new:
+                      1.0.10-6.el9.2
+                  old:
+              gd3php:
+                  ----------
+                  new:
+                      2.3.3-9.el9.remi
+                  old:
+              gdk-pixbuf2:
+                  ----------
+                  new:
+                      2.42.6-6.el9_6
+                  old:
+              gpg-pubkey.(none):
+                  ----------
+                  new:
+                      3228467c-613798eb,350d275d-6279464b,478f8947-5ff329c5,73d76b3f-63dace60
+                  old:
+                      350d275d-6279464b,73d76b3f-63dace60
+              graphite2:
+                  ----------
+                  new:
+                      1.3.14-9.el9
+                  old:
+              harfbuzz:
+                  ----------
+                  new:
+                      2.7.4-10.el9
+                  old:
+              highway:
+                  ----------
+                  new:
+                      1.2.0-7.el9
+                  old:
+              jbigkit-libs:
+                  ----------
+                  new:
+                      2.1-23.el9
+                  old:
+              jxl-pixbuf-loader:
+                  ----------
+                  new:
+                      0.7.2-2.el9
+                  old:
+              libX11:
+                  ----------
+                  new:
+                      1.7.0-11.el9
+                  old:
+              libX11-common:
+                  ----------
+                  new:
+                      1.7.0-11.el9
+                  old:
+              libXau:
+                  ----------
+                  new:
+                      1.0.9-8.el9
+                  old:
+              libXpm:
+                  ----------
+                  new:
+                      3.5.13-10.el9
+                  old:
+              libaom:
+                  ----------
+                  new:
+                      3.13.1-1.el9
+                  old:
+              libavif:
+                  ----------
+                  new:
+                      0.11.1-5.el9
+                  old:
+              libdav1d:
+                  ----------
+                  new:
+                      1.5.1-1.el9
+                  old:
+              libicu74:
+                  ----------
+                  new:
+                      74.2-1.el9.remi
+                  old:
+              libimagequant:
+                  ----------
+                  new:
+                      2.17.0-1.el9
+                  old:
+              libjpeg-turbo:
+                  ----------
+                  new:
+                      2.0.90-7.el9
+                  old:
+              libjxl:
+                  ----------
+                  new:
+                      0.7.2-2.el9
+                  old:
+              libpng:
+                  ----------
+                  new:
+                      2:1.6.37-12.el9
+                  old:
+              libraqm:
+                  ----------
+                  new:
+                      0.8.0-1.el9
+                  old:
+              libsodium:
+                  ----------
+                  new:
+                      1.0.18-8.el9
+                  old:
+              libtiff:
+                  ----------
+                  new:
+                      4.4.0-13.el9
+                  old:
+              libvmaf:
+                  ----------
+                  new:
+                      2.3.0-2.el9
+                  old:
+              libwebp:
+                  ----------
+                  new:
+                      1.2.0-8.el9
+                  old:
+              libxcb:
+                  ----------
+                  new:
+                      1.13.1-9.el9
+                  old:
+              nginx-filesystem:
+                  ----------
+                  new:
+                      2:1.20.1-22.el9_6.3
+                  old:
+              oniguruma5php:
+                  ----------
+                  new:
+                      6.9.10-1.el9.remi
+                  old:
+              php:
+                  ----------
+                  new:
+                      8.0.30-3.el9_6
+                  old:
+              php-cli:
+                  ----------
+                  new:
+                      8.0.30-3.el9_6
+                  old:
+              php-common:
+                  ----------
+                  new:
+                      8.0.30-3.el9_6
+                  old:
+              php-fpm:
+                  ----------
+                  new:
+                      8.0.30-3.el9_6
+                  old:
+              php-mbstring:
+                  ----------
+                  new:
+                      8.0.30-3.el9_6
+                  old:
+              php-opcache:
+                  ----------
+                  new:
+                      8.0.30-3.el9_6
+                  old:
+              php-pdo:
+                  ----------
+                  new:
+                      8.0.30-3.el9_6
+                  old:
+              php-xml:
+                  ----------
+                  new:
+                      8.0.30-3.el9_6
+                  old:
+              php84-php:
+                  ----------
+                  new:
+                      8.4.13-1.el9.remi
+                  old:
+              php84-php-bcmath:
+                  ----------
+                  new:
+                      8.4.13-1.el9.remi
+                  old:
+              php84-php-cli:
+                  ----------
+                  new:
+                      8.4.13-1.el9.remi
+                  old:
+              php84-php-common:
+                  ----------
+                  new:
+                      8.4.13-1.el9.remi
+                  old:
+              php84-php-fpm:
+                  ----------
+                  new:
+                      8.4.13-1.el9.remi
+                  old:
+              php84-php-gd:
+                  ----------
+                  new:
+                      8.4.13-1.el9.remi
+                  old:
+              php84-php-gmp:
+                  ----------
+                  new:
+                      8.4.13-1.el9.remi
+                  old:
+              php84-php-intl:
+                  ----------
+                  new:
+                      8.4.13-1.el9.remi
+                  old:
+              php84-php-mbstring:
+                  ----------
+                  new:
+                      8.4.13-1.el9.remi
+                  old:
+              php84-php-mysqlnd:
+                  ----------
+                  new:
+                      8.4.13-1.el9.remi
+                  old:
+              php84-php-opcache:
+                  ----------
+                  new:
+                      8.4.13-1.el9.remi
+                  old:
+              php84-php-pdo:
+                  ----------
+                  new:
+                      8.4.13-1.el9.remi
+                  old:
+              php84-php-pecl-zip:
+                  ----------
+                  new:
+                      1.22.7-1.el9.remi
+                  old:
+              php84-php-process:
+                  ----------
+                  new:
+                      8.4.13-1.el9.remi
+                  old:
+              php84-php-sodium:
+                  ----------
+                  new:
+                      8.4.13-1.el9.remi
+                  old:
+              php84-php-xml:
+                  ----------
+                  new:
+                      8.4.13-1.el9.remi
+                  old:
+              php84-runtime:
+                  ----------
+                  new:
+                      8.4-1.el9.remi
+                  old:
+              rav1e-libs:
+                  ----------
+                  new:
+                      0.7.1-5.el9
+                  old:
+              remi-libzip:
+                  ----------
+                  new:
+                      1.11.4-1.el9.remi
+                  old:
+              scl-utils:
+                  ----------
+                  new:
+                      1:2.0.3-4.el9
+                  old:
+              shared-mime-info:
+                  ----------
+                  new:
+                      2.1-5.el9
+                  old:
+              svt-av1-libs:
+                  ----------
+                  new:
+                      0.9.0-1.el9
+                  old:
+              tcl:
+                  ----------
+                  new:
+                      1:8.6.10-7.el9
+                  old:
+              vim-filesystem:
+                  ----------
+                  new:
+                      2:8.2.2637-22.el9_6.1
+                  old:
+              xml-common:
+                  ----------
+                  new:
+                      0.6.3-58.el9
+                  old:
+----------
+          ID: enable_php_remi84
+    Function: cmd.run
+        Name: dnf module enable php:remi-8.4 -y
+      Result: True
+     Comment: Command "dnf module enable php:remi-8.4 -y" run
+     Started: 12:13:41.717058
+    Duration: 1472.36 ms
+     Changes:
+              ----------
+              pid:
+                  14990
+              retcode:
+                  0
+              stderr:
+              stdout:
+                  Last metadata expiration check: 0:00:30 ago on Sat Oct 18 12:13:12 2025.
+                  Dependencies resolved.
+                  ================================================================================
+                   Package           Architecture     Version             Repository         Size
+                  ================================================================================
+                  Enabling module streams:
+                   php                                remi-8.4
+
+                  Transaction Summary
+                  ================================================================================
+
+                  Complete!
+----------
+          ID: httpd_restart
+    Function: service.running
+        Name: httpd
+      Result: True
+     Comment: Service httpd has been enabled, and is running
+     Started: 12:13:43.204346
+    Duration: 930.749 ms
+     Changes:
+              ----------
+              httpd:
+                  True
+----------
+          ID: http_firewalld_access
+    Function: firewalld.present
+        Name: public
+      Result: True
+     Comment: 'public' was configured.
+     Started: 12:13:44.138010
+    Duration: 2104.571 ms
+     Changes:
+              ----------
+              ports:
+                  ----------
+                  new:
+                      - 80/tcp
+                      - 80/udp
+                  old:
+----------
+          ID: httpd_create_sites-available
+    Function: file.directory
+        Name: /etc/httpd/sites-available
+      Result: True
+     Comment:
+     Started: 12:13:46.245177
+    Duration: 3.52 ms
+     Changes:
+              ----------
+              /etc/httpd/sites-available:
+                  ----------
+                  directory:
+                      new
+----------
+          ID: httpd_create_sites-enabled
+    Function: file.directory
+        Name: /etc/httpd/sites-enabled
+      Result: True
+     Comment:
+     Started: 12:13:46.248786
+    Duration: 1.003 ms
+     Changes:
+              ----------
+              /etc/httpd/sites-enabled:
+                  ----------
+                  directory:
+                      new
+----------
+          ID: httpd_copy_webconfig
+    Function: file.managed
+        Name: /etc/httpd/sites-available/nextcloud.example.com
+      Result: True
+     Comment: File /etc/httpd/sites-available/nextcloud.example.com updated
+     Started: 12:13:46.249887
+    Duration: 63.463 ms
+     Changes:
+              ----------
+              diff:
+                  New file
+              mode:
+                  0644
+----------
+          ID: httpd_replace_domain
+    Function: file.replace
+        Name: /etc/httpd/sites-available/nextcloud.example.com
+      Result: True
+     Comment: Changes were made
+     Started: 12:13:46.313454
+    Duration: 7.235 ms
+     Changes:
+              ----------
+              diff:
+                  ---
+                  +++
+                  @@ -1,7 +1,7 @@
+                   <VirtualHost *:80>
+                  -  DocumentRoot /var/www/sub-domains/[This_is_a_placeholder_for_sedding_the_domain]/html/
+                  -  ServerName [This_is_a_placeholder_for_sedding_the_domain]
+                  -  <Directory /var/www/sub-domains/[This_is_a_placeholder_for_sedding_the_domain]/html/>
+                  +  DocumentRoot /var/www/sub-domains/nextcloud.example.com/html/
+                  +  ServerName nextcloud.example.com
+                  +  <Directory /var/www/sub-domains/nextcloud.example.com/html/>
+                       Require all granted
+                       AllowOverride All
+                       Options FollowSymLinks MultiViews
+----------
+          ID: httpd_symlink_virtualhost
+    Function: file.symlink
+        Name: /etc/httpd/sites-enabled/nextcloud.example.com
+      Result: True
+     Comment: Created new symlink /etc/httpd/sites-enabled/nextcloud.example.com -> /etc/httpd/sites-available/nextcloud.example.com
+     Started: 12:13:46.320836
+    Duration: 5.4 ms
+     Changes:
+              ----------
+              new:
+                  /etc/httpd/sites-enabled/nextcloud.example.com
+----------
+          ID: httpd_configure_sites-enabled_folder
+    Function: file.append
+        Name: /etc/httpd/conf/httpd.conf
+      Result: True
+     Comment: Appended 1 lines
+     Started: 12:13:46.326336
+    Duration: 2.642 ms
+     Changes:
+              ----------
+              diff:
+                  ---
+
+                  +++
+
+                  @@ -356,3 +356,4 @@
+
+                   #
+                   # Load config files in the "/etc/httpd/conf.d" directory, if any.
+                   IncludeOptional conf.d/*.conf
+                  +Include /etc/httpd/sites-enabled
+----------
+          ID: httpd_create_webroot
+    Function: file.directory
+        Name: /var/www/sub-domains/nextcloud.example.com
+      Result: True
+     Comment:
+     Started: 12:13:46.329065
+    Duration: 1.966 ms
+     Changes:
+              ----------
+              /var/www/sub-domains/nextcloud.example.com:
+                  ----------
+                  directory:
+                      new
+----------
+          ID: mariadb_restart
+    Function: service.running
+        Name: mariadb
+      Result: True
+     Comment: Service mariadb has been enabled, and is running
+     Started: 12:13:46.331150
+    Duration: 2537.0 ms
+     Changes:
+              ----------
+              mariadb:
+                  True
+----------
+          ID: nextcloud_db
+    Function: mysql_database.present
+        Name: nextcloud
+      Result: True
+     Comment: The database nextcloud has been created
+     Started: 12:13:48.885849
+    Duration: 7.016 ms
+     Changes:
+              ----------
+              nextcloud:
+                  Present
+----------
+          ID: nextcloud_db_user
+    Function: mysql_user.present
+        Name: dbuser
+      Result: True
+     Comment: The user dbuser@localhost has been added
+     Started: 12:13:48.894368
+    Duration: 20.721 ms
+     Changes:
+              ----------
+              dbuser:
+                  Present
+----------
+          ID: nextcloud_db_user_grant
+    Function: mysql_grants.present
+      Result: True
+     Comment: Grant all privileges on nextcloud.* to dbuser@localhost has been added
+     Started: 12:13:48.916897
+    Duration: 14.081 ms
+     Changes:
+              ----------
+              nextcloud_db_user_grant:
+                  Present
+----------
+          ID: nextcloud_download
+    Function: file.managed
+        Name: /root/nextcloud_latest.zip
+      Result: True
+     Comment: File /root/nextcloud_latest.zip updated
+     Started: 12:13:48.931536
+    Duration: 17925.36 ms
+     Changes:
+              ----------
+              diff:
+                  New file
+              mode:
+                  0644
+----------
+          ID: nextcloud_extract
+    Function: archive.extracted
+        Name: /var/www/sub-domains/nextcloud.example.com/
+      Result: True
+     Comment: /root/nextcloud_latest.zip extracted to /var/www/sub-domains/nextcloud.example.com/, due to absence of one or more files/dirs. Output was trimmed to False number of lines
+     Started: 12:14:06.859788
+    Duration: 85963.855 ms
+     Changes:
+              ----------
+              extracted_files:
+                  VALUE_TRIMMED
+              updated ownership:
+                  True
+----------
+          ID: nextcloud_rename_folder
+    Function: cmd.run
+        Name: mv /var/www/sub-domains/nextcloud.example.com/nextcloud /var/www/sub-domains/nextcloud.example.com/html
+      Result: True
+     Comment: Command "mv /var/www/sub-domains/nextcloud.example.com/nextcloud /var/www/sub-domains/nextcloud.example.com/html" run
+     Started: 12:15:32.823913
+    Duration: 9.858 ms
+     Changes:
+              ----------
+              pid:
+                  15538
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: nextcloud_delete_zip
+    Function: file.absent
+        Name: /root/nextcloud_latest.zip
+      Result: True
+     Comment: Removed file /root/nextcloud_latest.zip
+     Started: 12:15:32.833947
+    Duration: 17.515 ms
+     Changes:
+              ----------
+              removed:
+                  /root/nextcloud_latest.zip
+----------
+          ID: nextcloud_httpd_restart
+    Function: cmd.run
+        Name: systemctl restart httpd
+      Result: True
+     Comment: Command "systemctl restart httpd" run
+     Started: 12:15:32.851627
+    Duration: 1174.383 ms
+     Changes:
+              ----------
+              pid:
+                  15539
+              retcode:
+                  0
+              stderr:
+              stdout:
+
+Summary for client4.school.test
+-------------
+Succeeded: 27 (changed=27)
+Failed:     0
+-------------
+Total states run:     27
+Total run time:  214.147 s
