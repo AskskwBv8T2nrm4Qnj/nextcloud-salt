@@ -21,7 +21,7 @@ It works on my Rocky Linux 9.6 VMs.
 With some minor refactoring, you could also use it for other distributions.
 Usage is at your own risk though, I take no responsibility for anything you mess up ;)
 
-Check ./example_out.txt if you want an indication of what a run does.
+Check out [this example output](example_output.txt) if you want an indication of what a state apply does.
 
 # Installation
 No idea how exactly you would make this repository part of a working or new environment.
